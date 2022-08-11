@@ -14,9 +14,9 @@ plr.Chatted:connect(function(msg)
 
 Duration = 16;
 end
-if string.sub(msg,1, 8) == "<startup" then
-    say("VEX HUB LOADED")
-    check = true
+if string.sub(msg,1, 8) == "<restart" then
+    char:Destroy()
+say("CHARACTER DESTROYED")
     end
     
 if string.sub(msg, 1, 8) == "<fighter" then
